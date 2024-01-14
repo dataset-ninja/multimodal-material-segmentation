@@ -1,11 +1,13 @@
 If you make use of the Multimodal Material Segmentation data, please cite the following reference:
 
 ``` bibtex 
-@dataset{Multimodal Material Segmentation,
-  author={Yupeng Liang and Ryosuke Wakaki and Shohei Nobuhara and Ko Nishino},
-  title={Multimodal Material Segmentation Dataset (MCubeS)},
-  year={2022},
-  url={https://github.com/kyotovision-public/multimodal-material-segmentation}
+@InProceedings{Liang_2022_CVPR,
+  author    = {Liang, Yupeng and Wakaki, Ryosuke and Nobuhara, Shohei and Nishino, Ko},
+  title     = {Multimodal Material Segmentation},
+  booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month     = {June},
+  year      = {2022},
+  pages     = {19800-19808}
 }
 ```
 

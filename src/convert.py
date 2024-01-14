@@ -139,6 +139,7 @@ def convert_and_upload_supervisely_project(
     project = api.project.create(workspace_id, project_name, change_name_if_conflict=True)
     group_tag_meta = sly.TagMeta(group_tag_name, sly.TagValueType.ANY_STRING)
     scene_meta = sly.TagMeta("scene", sly.TagValueType.ANY_STRING)
+
     meta = sly.ProjectMeta(tag_metas=[group_tag_meta, scene_meta])
 
     # https://github.com/kyotovision-public/multimodal-material-segmentation/blob/main/dataloaders/utils.py
