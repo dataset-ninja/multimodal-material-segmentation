@@ -8,7 +8,7 @@ Despite the significant progress in object recognition, outdoor material segment
 
 The authorts realize multimodal material segmentation, the recognition of per-pixel material categories from a set of images from the same vantage point but of different imaging modalities. In particular, they consider the combination of regular RGB, polarization, and near-infrared images at each instance. They build an imaging system consisting of a binocular stereo of quad-Bayer RGB polarization cameras, a monocular near-infrared camera, and a LiDAR to capture outdoor road scenes.  In addition to materials, the authors also annotated semantic segmentation labels.
 
-<img src="https://github.com/dataset-ninja/multimodal-material-segmentation/assets/120389559/c17b6d2d-54d5-4a68-a882-88b22004836e" alt="image" width="1000">
+<img src="https://github.com/dataset-ninja/multimodal-material-segmentation/assets/120389559/c17b6d2d-54d5-4a68-a882-88b22004836e" alt="image" width="1200">
 
 <span style="font-size: smaller; font-style: italic;">Per-pixel recognition of materials from multiple imaging modalities.</span>
 
