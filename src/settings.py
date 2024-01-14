@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "Multimodal Material Segmentation"
-PROJECT_NAME_FULL: str = "Multimodal Material Segmentation"
+PROJECT_NAME_FULL: str = "Multimodal Material Segmentation Dataset (MCubeS)"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
