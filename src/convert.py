@@ -126,13 +126,9 @@ def convert_and_upload_supervisely_project(
             obj_class = idx_to_class.get(pixel)
             if obj_class is not None:
                 mask = ann_np == pixel
-                ret, curr_mask = connectedComponents(mask.astype("uint8"), connectivity=8)
-                for i in range(1, ret):
-                    obj_mask = curr_mask == i
-                    curr_bitmap = sly.Bitmap(obj_mask)
-                    if curr_bitmap.area > 50:
-                        curr_label = sly.Label(curr_bitmap, obj_class)
-                        labels.append(curr_label)
+                curr_bitmap = sly.Bitmap(mask)
+                curr_label = sly.Label(curr_bitmap, obj_class)
+                labels.append(curr_label)
 
         return sly.Annotation(img_size=(img_height, img_wight), labels=labels, img_tags=tags)
 

@@ -13,8 +13,8 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = "Multimodal Material Segmentation"
-PROJECT_NAME_FULL: str = "Multimodal Material Segmentation Dataset (MCubeS)"
+PROJECT_NAME: str = "MCubeS"
+PROJECT_NAME_FULL: str = "MCubeS: Multimodal Material Segmentation Dataset"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -30,11 +30,10 @@ APPLICATIONS: List[Union[Industry, Domain, Research]] = [
 CATEGORY: Category = Category.Construction()
 
 CV_TASKS: List[CVTask] = [
-    CVTask.InstanceSegmentation(),
     CVTask.SemanticSegmentation(),
     CVTask.ObjectDetection(),
 ]
-ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.SemanticSegmentation()]
 
 RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
@@ -77,7 +76,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://vision.ist.i.kyoto-
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, images are grouped by ***im id***. Also every image contains information about its ***scene***. Explore it in supervisely supervisely labeling tool"
+    "__PRETEXT__": "Additionally, images are grouped by ***im id*** (total 500 images groups). Also every image contains information about its ***scene*** (total 42 scenes). Explore it in supervisely labeling tool"
 }
 TAGS: Optional[List[str]] = None
 
