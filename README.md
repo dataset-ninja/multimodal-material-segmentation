@@ -1,3 +1,3 @@
-# Multimodal Material Segmentation Dataset (MCubeS)
+# MCubeS: Multimodal Material Segmentation Dataset
 
-Multimodal Material Segmentation is a dataset for instance segmentation, semantic segmentation, and object detection tasks.
+MCubeS is a dataset for semantic segmentation and object detection tasks.
