@@ -1,4 +1,4 @@
-The authors of **(MCubeS): Multimodal Material Segmentation Dataset** create it from RGB, polarization, and near-infrared images. Dataset contains 500 sets of multimodal images capturing 42 street scenes. The capacity to discern materials based on their visual attributes is fundamental for computer vision applications, especially those engaged in real-world scenarios. Material segmentation, requiring meticulous identification of materials at a per-pixel level, poses a substantial challenge. Unlike objects, materials lack clear visual signatures in standard RGB representations. Nonetheless, the distinct radiometric behaviors of diverse materials can be aptly captured through alternative imaging modalities beyond RGB. Each image and pixel within the dataset is meticulously annotated with ground truth information for both material segmentation and semantic segmentation.
+The **MCubeS: Multimodal Material Segmentation Dataset** was created it from RGB, polarization, and near-infrared images. Dataset contains 500 sets of multimodal images capturing 42 street scenes. The capacity to discern materials based on their visual attributes is fundamental for computer vision applications, especially those engaged in real-world scenarios. Material segmentation, requiring meticulous identification of materials at a per-pixel level, poses a substantial challenge. Unlike objects, materials lack clear visual signatures in standard RGB representations. Nonetheless, the distinct radiometric behaviors of diverse materials can be aptly captured through alternative imaging modalities beyond RGB. Each image and pixel within the dataset is meticulously annotated with ground truth information for both material segmentation and semantic segmentation.
 
 While advancements in object recognition empower computers to precisely identify objects within images, the human visual system surpasses mere object identification. It possesses the ability to discriminate between, for example, a paper cup and a ceramic one, enabling thoughtful planning of interactions before physical engagement. If computers could emulate this discernment of object composition, critical decisions could be executed with enhanced speed and accuracy. The imperative task of densely recognizing materials at the pixel level in an image arises. Successful material segmentation offers notable advantages for road scene analysis, allowing autonomous vehicles or advanced driver assistance systems (ADAS) to differentiate between an asphalt road and a concrete one, or discern a leaf on the road from dirt, thereby enhancing control safety.
 
@@ -21,6 +21,10 @@ In the real world, surfaces composed of diverse materials exhibit distinct subsu
 
 <span style="font-size: smaller; font-style: italic;">Example multimodal images from the MCubeS Dataset. Different imaging modalities capture characteristic radiometric behaviors of different materials.</span>
 
+## Image Capture System
+
+The researchers devised a customized imaging system, affixing it to a cart to capture multimodal sequences of real-world scenes, replicating a viewpoint akin to that of a car. This system is augmented with a sparse LiDAR, strategically incorporated to facilitate the subsequent propagation of annotations across diverse image modalities. The imaging apparatus comprises a duo of RGB-polarization (RGB-P) cameras (LUCID TRI050S-QC, 2/3-inch sensor), an NIR camera (FLIR GS3-U3-41C6NIR-C, 1-inch sensor), and a LiDAR unit (Livox Mid-100).
+
 ## Dataset description
 
 The MCubeS dataset comprises two distinct categories of image sequences. The first type involves continuous forward movement of the imaging system, replicating the viewpoint of a moving vehicle. The second type consists of sequences captured at a stationary position while the imaging system pans, facilitating the inclusion of materials such as water, which are infrequently observed in road scenes. This second type of data enhances the diversity of sample images, particularly for less common materials.
@@ -40,7 +44,7 @@ The category encompasses materials like _ceramic_, _plaster_, _plastic_, and _sk
 
 <span style="font-size: smaller; font-style: italic;">MCubeS dataset spans a wide range of road scenes (top row), including river sidewalks to railroad tracks, each densely annotated with materials (bottom row).</span>
 
-## Imaging modalities
+## Image modalities
 
 
 **Polarization** 
@@ -52,8 +56,4 @@ When the orientations of the electric fields form an ellipse on the plane perpen
 Light comprises a spectrum of electromagnetic waves with varying wavelengths, leading to distinctive radiometric behaviors dependent on the wavelength. Objects exhibit diverse colors as their reflection is influenced by wavelength. Simultaneously, the absorption and scattering characteristics of light transmitted into a subsurface or a medium vary based on wavelength. For instance, shorter wavelength light tends to undergo more forward scattering compared to longer wavelength light. The absorption of light experiences pronounced changes, particularly beyond the visual spectrum.
 
 The absorption of light, notably through water—a common element in our daily surroundings, including not just puddles but also natural surfaces like water-containing leaves—is highly sensitive to wavelength. In the near-infrared range spanning from 800nm to 1000nm, the absorption coefficient of light in water exhibits nearly linear growth from 0 to 1. Consequently, for a camera equipped with a near-infrared filter within this wavelength range observing water or water-containing surfaces, varying intensity levels encode the depth or "wetness" of the surface, with darker shades indicating greater depth or wetness.
-
-## Image Capture System
-
-The researchers devised a customized imaging system, affixing it to a cart to capture multimodal sequences of real-world scenes, replicating a viewpoint akin to that of a car. This system is augmented with a sparse LiDAR, strategically incorporated to facilitate the subsequent propagation of annotations across diverse image modalities. The imaging apparatus comprises a duo of RGB-polarization (RGB-P) cameras (LUCID TRI050S-QC, 2/3-inch sensor), an NIR camera (FLIR GS3-U3-41C6NIR-C, 1-inch sensor), and a LiDAR unit (Livox Mid-100).
 
