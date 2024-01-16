@@ -1,6 +1,6 @@
 Dataset **MCubeS** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/R/6/hY/guEzBTgSQ10C5zfRF9DQjgCRHdJHCLmwjCYoFTrylUwgr5CSPxTw89D51iMMTYR7jCdmnvgVqCkrMnqUGtujx9RLAWqwK2B5owHFZrrRvjGINeUFVzPNW789fW6V.tar)
+ [Download](https://www.dropbox.com/scl/fi/0jis8z7xvano5qsxbe61k/mcubes-DatasetNinja.tar?rlkey=17ihb5xpemx44xujzfjbjt3w4&dl=1)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
